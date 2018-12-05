@@ -1,0 +1,22 @@
+//- mix-responsive-grid.pug
+//- content: block
+mixin responsive_grid(table_width, content_width, spacer)
+  - spacer_size_g = (spacer) ? spacer : 10;
+  - var table_spacer_g = {};
+  - table_spacer_g.height = spacer_size_g;
+  - table_spacer_g.style = 'font-size:'+spacer_size_g+'px; line-height:'+spacer_size_g+'px;';
+  table.wrapper(width=table_width bgcolor=nld_navy_blue)&attributes(table_reset)
+
+    //- SPACER
+    tr: td&attributes(table_spacer_g)&attributes(table_reset) &nbsp;
+
+    tr
+      td&attributes(td_reset)
+        table.container(width=content_width)&attributes(table_reset)
+          tr
+            block
+            //- include responsive grid item here
+
+    //- SPACER
+    tr: td&attributes(table_spacer_g)&attributes(table_reset) &nbsp;
+

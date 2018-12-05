@@ -1,0 +1,15 @@
+//- mix-mso.pug
+//- content: block
+
+mixin mso_yes()
+  //- MSO
+  <!--[if (gte mso 9)|(IE)]>
+    block
+  <![endif]-->
+
+
+mixin mso_no()
+  //- NOT MSO
+  <!--[if !gte mso 9]><!---->
+    block
+  <!--<![endif]-->

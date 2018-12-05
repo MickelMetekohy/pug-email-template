@@ -1,0 +1,15 @@
+//- mix-responsive-grid-item.pug
+//- content: block
+mixin responsive_grid_item(item_width, spacer)
+  - spacer_size_i = (spacer) ? spacer : 1;
+  - var table_spacer_i = {};
+  - table_spacer_i.height = spacer_size_i;
+  - table_spacer_i.style = 'height:'+spacer_size_i+'px; font-size:'+spacer_size_i+'px; line-height:'+spacer_size_i+'px;';
+
+  //- content
+  td.mobile(width=item_width)&attributes(td_reset)
+    //- SPACER
+    p(style=m0+p0)&attributes(table_spacer_i) &nbsp;
+    block
+    //- SPACER
+    p(style=m0+p0)&attributes(table_spacer_i) &nbsp;

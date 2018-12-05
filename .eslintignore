@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# Production
+_distribute
