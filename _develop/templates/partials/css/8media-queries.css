@@ -1,0 +1,13 @@
+/* MEDIA QUERIES */
+@media all and (max-width:639px){
+  *[class="mobileOff"] { width: 0px !important; display: none !important; }
+  *[class*="mobileOn"] { display: block !important; max-height:none !important; }
+}
+
+/* @media screen and (max-width: 480px) {}
+@media screen and (max-width: 600px) {}
+@media screen and (min-width: 750px) {}
+@media screen and (min-width: 800px) {}
+@media screen {}
+@media print {}
+@media all {} */

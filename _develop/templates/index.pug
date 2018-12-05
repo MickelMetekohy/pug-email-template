@@ -14,10 +14,27 @@ html(lang="en")
   //- Document Head
   head
     include partials/head.pug
+
     style(type="text/css")
-      include partials/css/owa.css
-      include partials/css/fonts.css
-      include partials/css/base.css
+      include partials/css/0dev.css
+    style(type="text/css")
+      include partials/css/1client-specific-styles.css
+    style(type="text/css")
+      include partials/css/2reset-tags.css
+    style(type="text/css")
+      include partials/css/3outlook-font.css
+    style(type="text/css")
+      include partials/css/4fonts.css
+    style(type="text/css")
+      include partials/css/5ios-blue-links.css
+    style(type="text/css")
+      include partials/css/6android-fix.css
+    style(type="text/css")
+      include partials/css/7media-queries.css
+    style(type="text/css")
+      include partials/css/8media-queries.css
+    style(type="text/css")
+      include partials/css/9owa.css
 
   //- Document Content wrapper-table
   body.body(style=m0+p0+bgcw+text_normal)
@@ -30,7 +47,7 @@ html(lang="en")
           //- START ----->
 
           blockquote(style=m0+p0)
-            form(style="display: inline-block;box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.3215686274509804);" action="" method="get" target="_blank")
+            form(style=bgcdg+"display: inline-block;box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.3215686274509804);" action="" method="get" target="_blank")
               //- SPACER
               +responsive_grid(640, 600, 30)
 
