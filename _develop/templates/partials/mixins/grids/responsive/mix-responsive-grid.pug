@@ -8,7 +8,7 @@ mixin responsive_grid(table_width, content_width, spacer)
   table.wrapper(width=table_width bgcolor=nld_navy_blue)&attributes(table_reset)
 
     //- SPACER
-    tr: td&attributes(table_spacer_g)&attributes(table_reset) &nbsp;
+    tr: td&attributes(table_spacer_g)&attributes(td_reset) &nbsp;
 
     tr
       td&attributes(td_reset)
@@ -18,5 +18,5 @@ mixin responsive_grid(table_width, content_width, spacer)
             //- include responsive grid item here
 
     //- SPACER
-    tr: td&attributes(table_spacer_g)&attributes(table_reset) &nbsp;
+    tr: td&attributes(table_spacer_g)&attributes(td_reset) &nbsp;
 
